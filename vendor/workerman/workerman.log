@@ -1,0 +1,96 @@
+2019-06-20 08:46:06 pid:1 Worker process terminated with ERROR: E_ERROR "Allowed memory size of 134217728 bytes exhausted (tried to allocate 65015808 bytes) in C:\xampp\htdocs\socket.io\index.php on line 10"
+2019-06-20 08:48:09 pid:1 Worker process terminated with ERROR: E_ERROR "Allowed memory size of 134217728 bytes exhausted (tried to allocate 65015808 bytes) in C:\xampp\htdocs\socket.io\index.php on line 10"
+2019-06-20 08:53:08 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Cannot use object of type PHPSocketIO\Socket as array in C:\xampp\htdocs\socket.io\index.php:9
+Stack trace:
+#0 [internal function]: {closure}(Object(PHPSocketIO\Socket))
+#1 C:\xampp\htdocs\socket.io\vendor\workerman\phpsocket.io\src\Event\Emitter.php(93): call_user_func_array(Object(Closure), Array)
+#2 [internal function]: PHPSocketIO\Event\Emitter->emit('connection', Object(PHPSocketIO\Socket))
+#3 C:\xampp\htdocs\socket.io\vendor\workerman\phpsocket.io\src\Nsp.php(102): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\socket.io\vendor\workerman\phpsocket.io\src\Nsp.php(68): PHPSocketIO\Nsp->emit('connection', Object(PHPSocketIO\Socket))
+#5 C:\xampp\htdocs\socket.io\vendor\workerman\phpsocket.io\src\Client.php(64): PHPSocketIO\Nsp->add(Object(PHPSocketIO\Client), Object(PHPSocketIO\Nsp), Array)
+#6 C:\xampp\htdocs\socket.io\vendor\workerman\phpsocket.io\src\SocketIO.php(130): PHPSocketIO\Client->connect('/')
+#7 [internal function]: PHPSocketIO\SocketIO->onConnection(Object(PHPSocketIO\Engi in C:\xampp\htdocs\socket.io\index.php on line 9"
+2019-06-20 09:41:52 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to undefined method PHPSocketIO\Socket::emmit() in C:\xampp\htdocs\socket.io\index.php:10
+Stack trace:
+#0 [internal function]: {closure}(Object(PHPSocketIO\Socket))
+#1 C:\xampp\htdocs\socket.io\vendor\workerman\phpsocket.io\src\Event\Emitter.php(93): call_user_func_array(Object(Closure), Array)
+#2 [internal function]: PHPSocketIO\Event\Emitter->emit('connection', Object(PHPSocketIO\Socket))
+#3 C:\xampp\htdocs\socket.io\vendor\workerman\phpsocket.io\src\Nsp.php(102): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\socket.io\vendor\workerman\phpsocket.io\src\Nsp.php(68): PHPSocketIO\Nsp->emit('connection', Object(PHPSocketIO\Socket))
+#5 C:\xampp\htdocs\socket.io\vendor\workerman\phpsocket.io\src\Client.php(64): PHPSocketIO\Nsp->add(Object(PHPSocketIO\Client), Object(PHPSocketIO\Nsp), Array)
+#6 C:\xampp\htdocs\socket.io\vendor\workerman\phpsocket.io\src\SocketIO.php(130): PHPSocketIO\Client->connect('/')
+#7 [internal function]: PHPSocketIO\SocketIO->onConnection(Object(PHPSocketIO\Engi in C:\xampp\htdocs\socket.io\index.php on line 10"
+2019-06-20 09:42:11 pid:1 Worker process terminated with ERROR: E_ERROR "Uncaught Error: Call to undefined method PHPSocketIO\Socket::emmit() in C:\xampp\htdocs\socket.io\index.php:10
+Stack trace:
+#0 [internal function]: {closure}(Object(PHPSocketIO\Socket))
+#1 C:\xampp\htdocs\socket.io\vendor\workerman\phpsocket.io\src\Event\Emitter.php(93): call_user_func_array(Object(Closure), Array)
+#2 [internal function]: PHPSocketIO\Event\Emitter->emit('connection', Object(PHPSocketIO\Socket))
+#3 C:\xampp\htdocs\socket.io\vendor\workerman\phpsocket.io\src\Nsp.php(102): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\socket.io\vendor\workerman\phpsocket.io\src\Nsp.php(68): PHPSocketIO\Nsp->emit('connection', Object(PHPSocketIO\Socket))
+#5 C:\xampp\htdocs\socket.io\vendor\workerman\phpsocket.io\src\Client.php(64): PHPSocketIO\Nsp->add(Object(PHPSocketIO\Client), Object(PHPSocketIO\Nsp), Array)
+#6 C:\xampp\htdocs\socket.io\vendor\workerman\phpsocket.io\src\SocketIO.php(130): PHPSocketIO\Client->connect('/')
+#7 [internal function]: PHPSocketIO\SocketIO->onConnection(Object(PHPSocketIO\Engi in C:\xampp\htdocs\socket.io\index.php on line 10"
+2019-06-21 07:01:44 pid:1 Error: Call to a member function send() on null in C:\xampp\htdocs\socket.io\server.php:13
+Stack trace:
+#0 [internal function]: {closure}(Array)
+#1 C:\xampp\htdocs\socket.io\vendor\workerman\phpsocket.io\src\Event\Emitter.php(93): call_user_func_array(Object(Closure), Array)
+#2 [internal function]: PHPSocketIO\Event\Emitter->emit('message', Array)
+#3 C:\xampp\htdocs\socket.io\vendor\workerman\phpsocket.io\src\Socket.php(307): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\socket.io\vendor\workerman\phpsocket.io\src\Socket.php(269): PHPSocketIO\Socket->onevent(Array)
+#5 C:\xampp\htdocs\socket.io\vendor\workerman\phpsocket.io\src\Client.php(202): PHPSocketIO\Socket->onpacket(Array)
+#6 [internal function]: PHPSocketIO\Client->ondecoded(Array)
+#7 C:\xampp\htdocs\socket.io\vendor\workerman\phpsocket.io\src\Event\Emitter.php(93): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\socket.io\vendor\workerman\phpsocket.io\src\Parser\Decoder.php(34): PHPSocketIO\Event\Emitter->emit('decoded', Array)
+#9 C:\xampp\htdocs\socket.io\vendor\workerman\phpsocket.io\src\Client.php(182): PHPSocketIO\Parser\Decoder->add('2["message",{"m...')
+#10 [internal function]: PHPSocketIO\Client->ondata('2["message",{"m...')
+#11 C:\xampp\htdocs\socket.io\vendor\workerman\phpsocket.io\src\Event\Emitter.php(93): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\socket.io\vendor\workerman\phpsocket.io\src\Engine\Socket.php(187): PHPSocketIO\Event\Emitter->emit('data', '2["message",{"m...')
+#13 [internal function]: PHPSocketIO\Engine\Socket->onPacket(Array)
+#14 C:\xampp\htdocs\socket.io\vendor\workerman\phpsocket.io\src\Event\Emitter.php(93): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\socket.io\vendor\workerman\phpsocket.io\src\Engine\Transport.php(56): PHPSocketIO\Event\Emitter->emit('packet', Array)
+#16 C:\xampp\htdocs\socket.io\vendor\workerman\phpsocket.io\src\Engine\Transport.php(61): PHPSocketIO\Engine\Transport->onPacket(Array)
+#17 [internal function]: PHPSocketIO\Engine\Transport->onData('42["message",{"...')
+#18 C:\xampp\htdocs\socket.io\vendor\workerman\phpsocket.io\src\Engine\Transports\WebSocket.php(26): call_user_func(Array, '42["message",{"...')
+#19 [internal function]: PHPSocketIO\Engine\Transports\WebSocket->onData2(Object(Workerman\Connection\TcpConnection), '42["message",{"...')
+#20 C:\xampp\htdocs\socket.io\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), '42["message",{"...')
+#21 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #52)
+#22 C:\xampp\htdocs\socket.io\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#23 C:\xampp\htdocs\socket.io\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#24 C:\xampp\htdocs\socket.io\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#25 C:\xampp\htdocs\socket.io\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#26 C:\xampp\htdocs\socket.io\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#27 C:\xampp\htdocs\socket.io\server.php(20): Workerman\Worker::runAll()
+#28 {main}
+2019-06-21 07:01:44 pid:1 Worker process terminated
+2019-06-21 07:03:52 pid:1 Error: Call to a member function send() on null in C:\xampp\htdocs\socket.io\server.php:13
+Stack trace:
+#0 [internal function]: {closure}(Array)
+#1 C:\xampp\htdocs\socket.io\vendor\workerman\phpsocket.io\src\Event\Emitter.php(93): call_user_func_array(Object(Closure), Array)
+#2 [internal function]: PHPSocketIO\Event\Emitter->emit('message', Array)
+#3 C:\xampp\htdocs\socket.io\vendor\workerman\phpsocket.io\src\Socket.php(307): call_user_func_array(Array, Array)
+#4 C:\xampp\htdocs\socket.io\vendor\workerman\phpsocket.io\src\Socket.php(269): PHPSocketIO\Socket->onevent(Array)
+#5 C:\xampp\htdocs\socket.io\vendor\workerman\phpsocket.io\src\Client.php(202): PHPSocketIO\Socket->onpacket(Array)
+#6 [internal function]: PHPSocketIO\Client->ondecoded(Array)
+#7 C:\xampp\htdocs\socket.io\vendor\workerman\phpsocket.io\src\Event\Emitter.php(93): call_user_func_array(Array, Array)
+#8 C:\xampp\htdocs\socket.io\vendor\workerman\phpsocket.io\src\Parser\Decoder.php(34): PHPSocketIO\Event\Emitter->emit('decoded', Array)
+#9 C:\xampp\htdocs\socket.io\vendor\workerman\phpsocket.io\src\Client.php(182): PHPSocketIO\Parser\Decoder->add('2["message",{"m...')
+#10 [internal function]: PHPSocketIO\Client->ondata('2["message",{"m...')
+#11 C:\xampp\htdocs\socket.io\vendor\workerman\phpsocket.io\src\Event\Emitter.php(93): call_user_func_array(Array, Array)
+#12 C:\xampp\htdocs\socket.io\vendor\workerman\phpsocket.io\src\Engine\Socket.php(187): PHPSocketIO\Event\Emitter->emit('data', '2["message",{"m...')
+#13 [internal function]: PHPSocketIO\Engine\Socket->onPacket(Array)
+#14 C:\xampp\htdocs\socket.io\vendor\workerman\phpsocket.io\src\Event\Emitter.php(93): call_user_func_array(Array, Array)
+#15 C:\xampp\htdocs\socket.io\vendor\workerman\phpsocket.io\src\Engine\Transport.php(56): PHPSocketIO\Event\Emitter->emit('packet', Array)
+#16 C:\xampp\htdocs\socket.io\vendor\workerman\phpsocket.io\src\Engine\Transport.php(61): PHPSocketIO\Engine\Transport->onPacket(Array)
+#17 [internal function]: PHPSocketIO\Engine\Transport->onData('42["message",{"...')
+#18 C:\xampp\htdocs\socket.io\vendor\workerman\phpsocket.io\src\Engine\Transports\WebSocket.php(26): call_user_func(Array, '42["message",{"...')
+#19 [internal function]: PHPSocketIO\Engine\Transports\WebSocket->onData2(Object(Workerman\Connection\TcpConnection), '42["message",{"...')
+#20 C:\xampp\htdocs\socket.io\vendor\workerman\workerman\Connection\TcpConnection.php(658): call_user_func(Array, Object(Workerman\Connection\TcpConnection), '42["message",{"...')
+#21 [internal function]: Workerman\Connection\TcpConnection->baseRead(Resource id #53)
+#22 C:\xampp\htdocs\socket.io\vendor\workerman\workerman\Events\Select.php(294): call_user_func_array(Array, Array)
+#23 C:\xampp\htdocs\socket.io\vendor\workerman\workerman\Worker.php(2357): Workerman\Events\Select->loop()
+#24 C:\xampp\htdocs\socket.io\vendor\workerman\workerman\Worker.php(1351): Workerman\Worker->run()
+#25 C:\xampp\htdocs\socket.io\vendor\workerman\workerman\Worker.php(1294): Workerman\Worker::forkWorkersForWindows()
+#26 C:\xampp\htdocs\socket.io\vendor\workerman\workerman\Worker.php(509): Workerman\Worker::forkWorkers()
+#27 C:\xampp\htdocs\socket.io\server.php(20): Workerman\Worker::runAll()
+#28 {main}
+2019-06-21 07:03:52 pid:1 Worker process terminated
